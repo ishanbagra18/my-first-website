@@ -1,0 +1,2524 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+.section1
+{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.backhead
+{
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #eabad6;
+    background-image: url(vibe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    position: relative;
+}
+
+
+.logo
+{
+    width: 200px;
+    height: 200px;
+    color: #c43087;
+}
+
+nav
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav ul li
+{
+    display: inline-flex;
+    list-style: none;
+    margin: 15px 20px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: rgb(165, 12, 165);
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+}
+
+
+nav ul li a::after
+{
+    content: "";
+    background-color: #c43087;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+
+
+
+.animation
+{
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-delay: 1sec;
+}
+
+
+@keyframes anim {
+
+    0%
+    {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }    
+}
+
+
+
+
+.headphoneanimation
+{
+    animation-name: toleft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 5sec;
+}
+
+
+
+@keyframes toleft {
+    
+    0%
+    {
+        opacity: 0;
+
+    }
+
+
+    100%
+    {
+        opacity: 1;
+        transform: translate3d(10px, 20px, 30px) rotate3d(1, 1, 1, 45deg) scale3d(1.5, 2, 1);
+    }
+}
+
+.login
+{
+    text-decoration: none;
+    color: #111;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.download
+{
+    text-decoration: none;
+    padding: 15px 10px;
+    color: #fff;
+    background-image: linear-gradient(45deg ,#df4881,#c43087);
+    font-size: 20px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    margin-right: 20px;
+}
+
+
+.content
+{
+    margin-top: 40px;
+    width: 600px;
+    /* border: 2px solid red; */
+    margin-left: 100px;
+}
+
+
+
+
+.content h1
+{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+
+.content p::first-letter
+{
+    font-size: 35px;
+}
+
+.content p
+{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+.model
+{
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    background-size: cover
+}
+
+
+
+.section2
+{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(240, 240, 240);
+}
+
+
+.page2heading
+{
+    font-size: 40px;
+    text-align: center;
+    background-color: #efd2e2;
+}
+
+.about
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    color: #c43087;
+    font-weight: 800;
+    margin-right: 3px;
+}
+
+.us
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 800;
+    
+}
+
+
+.page2image
+{
+    margin-top: 100px;
+    margin-left: 40px;
+    background-color: #fff;
+
+}
+
+.page2image img
+{
+    height: 400px;
+    width: 500px;
+}
+
+.whychooseus
+{
+    /* border: 2px solid red; */
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 150px;
+    right: 200px;
+}
+
+
+.whychooseus h1
+{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+
+.whychooseus p
+{
+    margin-top: 40px;
+}
+
+.whychooseus button
+{
+    margin-top: 20px;
+    /* margin-left: 40px; */
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #bc448a;
+    color: white;
+}
+
+.whychooseus button:hover
+{
+    background-color: black;
+
+}
+
+
+.fouricon
+{
+    position: absolute;
+    height: 250px;
+    width: 90vw;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon1 , .icon2 , .icon3 , .icon4
+{
+    height: 100px;
+    width: 300px;
+    /* border: 2px solid red; */
+}
+
+
+
+ .icon1 
+{
+    font-size: 50px;
+    color: #bc448a;
+    background-color: #fff;
+}
+
+
+.dark
+{
+    font-size: 30px;
+    color: black;
+    
+}
+
+
+.light
+
+{
+    font-size: 15px;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+.icon2
+{
+    font-size: 50px;
+    color: #bc448a;
+    background-color: #fff;
+}
+
+
+
+
+.icon3
+{
+    font-size: 50px;
+    color: #bc448a;
+    background-color: #fff;
+}
+
+
+
+
+.icon4
+{
+    font-size: 50px;
+    color: #bc448a;
+    background-color: #fff;
+}
+
+
+.section3
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, pink,lightblue);
+    position: relative;
+}
+
+.page3heading
+{
+    text-align: center;
+    font-size: 40px;
+    background-color: #efd2e2;
+}
+
+.latest
+{
+    font-weight: 800;
+    color: black;
+}
+
+
+.product
+{
+    color: #bc448a;
+    font-weight: 800;
+}
+
+
+
+.page3content
+{
+    height: 400px;
+    width: 500px;
+    /* border: 2px solid  red; */
+    position: relative;
+    top: 30%;
+    left: 8%;
+    position: relative;
+}
+
+
+.thewestmire
+{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size: 60px;
+    font-weight:100;
+    text-transform: capitalize;
+}
+
+
+.A56
+{
+    position:absolute;
+    top: 35%;
+    left: 30%;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+.button
+{
+    margin-top: 30px;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+}
+
+.buynow , .shopall
+{
+    padding: 15px;
+    border-radius: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.buynow:hover
+{
+    background-color: #bc448a;
+    color: #fff;
+}
+
+
+.shopall:hover
+{
+    background-color: #bc448a;
+    color: #fff;
+}
+
+
+.imageofpage3
+{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    /* border: 2px solid red; */
+    top: 25%;
+    right: 10%;
+
+
+}
+
+
+
+.section4
+{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(255, 192, 203),lightblue);
+    position: relative;
+}
+
+
+
+.section4image
+{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    /* border: 2px solid red; */
+    top: 25%;
+    left: 12%;
+}
+
+
+
+
+.section4content
+{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    /* border: 2px solid red; */
+    top: 30%;
+    right: 10%;
+}
+
+.smart 
+{
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.watches
+{
+    font-size: 40px;
+    /* font-weight: bold; */
+}
+
+
+.section4content p
+{
+    text-align: right;
+    font-size: 30px;
+    margin-right: 50px;
+    margin-top: -10px;
+}
+
+.page4button
+{
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+
+
+.page4button button
+{
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+
+
+.page4button button:hover
+{
+    transform: translate3d(10px, 10px, 20px) rotate3d(1, 1, 0, 10deg) scale3d(1.1, 1.1, 1.1);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.section5
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, pink,lightblue);
+    position: relative;
+}
+
+
+.section5content
+{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    /* border: 2px solid red; */
+    top: 40%;
+    left: 10%;
+
+}
+
+.section5content h1
+{
+    font-size: 60px;
+    text-transform: capitalize;
+
+}
+
+
+.section5content p
+{
+    font-size: 20px;
+}
+
+.page5button
+{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+.show
+{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+
+.show:hover
+{
+transform: translate3d(10px, 10px, 20px) rotate3d(1, 1, 0, 10deg) scale3d(1.1, 1.1, 1.1);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+.section5image
+{
+    height: 500px;
+    width: 500px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+
+
+.section6
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightblue;
+    position: relative;
+}
+
+
+.page6heading
+{
+    text-align: center;
+}
+
+
+.page6heading h1
+{
+    text-transform: capitalize;
+    font-size: 40px;
+
+}
+
+
+
+.page6container
+{
+    height: 600px;
+    width: 100vw;
+    /* border: 2px solid red; */
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    top: 20%;
+    padding: 15px;
+}
+
+
+.one , .two , .three
+{
+    height: 350px;
+    width: 300px;
+    background-color: #fff;
+    /* border: 2px solid red; */
+    border-radius: 0 50px 0 50px;
+    position: relative;
+}
+
+
+.oneimage
+{
+    height: 150px;
+    width: 250px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 0 40px 0 0 ;
+    background-image: url(laptop.jpg);
+    background-size: cover;
+}
+
+
+
+.twoimage
+{
+    height: 150px;
+    width: 250px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 0 40px 0 0 ;
+    background-image: url(smart\ watch.png);
+    background-size: cover;
+}
+
+
+
+
+.threeimage
+{
+    height: 150px;
+    width: 250px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 0 40px 0 0 ;
+    background-image: url(page6headphone.avif);
+    background-size: cover;
+}
+
+
+.onecontent
+{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+
+
+.twocontent
+{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+
+
+
+.threecontent
+{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+
+
+.section7
+{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* background-color: rgb255, 192, 203;   */
+    background-color: rgb(255, 192, 203);
+}
+
+
+.allproducts
+{
+    position: absolute;
+    height: 300px;
+    width: 100vw;
+    /* border: 2px solid red; */
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page7heading
+{
+    position: absolute;
+    align-items: center;
+    left: 40%;
+    font-size: 40px;
+}
+
+
+
+.product1container
+{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+
+.product1
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    /* background-color: yellow; */
+}
+
+.product1:hover
+{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+.product1front
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #d193b2; */
+    color: #111;
+    /* border: 2px solid rgb(170, 169, 169); */
+
+}
+
+
+
+.product1frontimage
+{
+    position: absolute;
+    left: 15%;
+    height: 200px;
+    width: 250px;
+    /* border: 2px solid red; */
+    background-image: url("product1.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.product1frontbutton
+{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+}
+
+.product1frontbutton button
+{
+    padding: 2px 10px;
+    width: 200px;
+    background-color: rgb(194, 220, 228);
+}
+
+
+.product1frontfooter
+{
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    /* border: 2px solid red; */
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.product1addtocart
+{
+    margin-right: 10px;
+}
+
+
+
+.product1addtocart button
+{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+
+.product1price p
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+
+.product1back
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #ce7da6; */
+    color: #111;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product1back button
+{
+    background-color: #6693b5; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s; 
+}
+
+
+.product1back button:hover
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #bf6ab8; 
+}
+
+
+
+
+
+
+
+
+
+.product2container
+{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+
+.product2
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    /* background-color: yellow; */
+}
+
+.product2:hover
+{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+.product2front
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #d193b2; */
+    color: #111;
+}
+
+
+
+
+
+.product2frontimage
+{
+    position: absolute;
+    left: 15%;
+    height: 200px;
+    width: 250px;
+    /* border: 2px solid red; */
+    background-image: url("product2.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.product2frontbutton
+{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+}
+
+.product2frontbutton button
+{
+    padding: 2px 10px;
+    width: 200px;
+    background-color: rgb(194, 220, 228);
+}
+
+
+.product2frontfooter
+{
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    /* border: 2px solid red; */
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.product2addtocart
+{
+    margin-right: 10px;
+}
+
+
+
+.product2addtocart button
+{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+
+.product2price p
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+
+.product2back
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #ce7da6; */
+    color: #111;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product2back button
+{
+    background-color: #6693b5; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s; 
+}
+
+
+.product2back button:hover
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #bf6ab8; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product3container
+{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+
+.product3
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    /* background-color: yellow; */
+}
+
+.product3:hover
+{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+.product3front
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #ff66b2; */
+    color: #111;
+}
+
+
+
+
+.product3frontimage
+{
+    position: absolute;
+    left: 15%;
+    height: 200px;
+    width: 250px;
+    /* border: 2px solid red; */
+    background-image: url("product3.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.product3frontbutton
+{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+}
+
+.product3frontbutton button
+{
+    padding: 2px 10px;
+    width: 200px;
+    background-color: rgb(194, 220, 228);
+}
+
+
+.product3frontfooter
+{
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    /* border: 2px solid red; */
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.product3addtocart
+{
+    margin-right: 10px;
+}
+
+
+
+.product3addtocart button
+{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+
+.product3price p
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+
+.product3back
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #ce7da6; */
+    color: #111;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product3back button
+{
+    background-color: #6693b5; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s; 
+}
+
+
+.product3back button:hover
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #bf6ab8; 
+}
+
+
+
+
+
+
+
+.allproduct2
+{
+    position: absolute;
+    height: 300px;
+    width: 100vw;
+    /* border: 2px solid red; */
+    top: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+.product4container
+{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+
+.product4
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    /* background-color: yellow; */
+}
+
+.product4:hover
+{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+.product4front
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    color: #111;
+}
+
+
+.product4image
+{
+    position: absolute;
+    left: 15%;
+    height: 200px;
+    width: 250px;
+    /* border: 2px solid red; */
+    background-image: url("product4.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.product4frontbutton
+{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+}
+
+
+
+.product4frontbutton button
+{
+    padding: 2px 10px;
+    width: 200px;
+    background-color: rgb(194, 220, 228);
+}
+
+
+
+
+.product4frontfooter
+{
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.product4addtocart
+{
+    margin-right: 10px;
+}
+
+
+
+.product4addtocart button
+{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+
+.product4price p
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.product4back
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #99ccff; */
+    color: #111;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+
+.product4back button
+{
+    background-color: #6693b5; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s; 
+}
+
+
+.product4back button:hover
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #bf6ab8; 
+}
+
+
+
+
+
+
+
+.product5container
+{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+
+.product5
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    /* background-color: yellow; */
+}
+
+.product5:hover
+{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+.product5front
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #ff66b2; */
+    color: #111;
+}
+
+
+
+
+
+
+.product5image
+{
+    position: absolute;
+    left: 15%;
+    height: 200px;
+    width: 250px;
+    /* border: 2px solid red; */
+    background-image: url("product5.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.product5frontbutton
+{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+}
+
+
+
+.product5frontbutton button
+{
+    padding: 2px 10px;
+    width: 200px;
+    background-color: rgb(194, 220, 228);
+}
+
+
+
+
+.product5frontfooter
+{
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.product5addtocart
+{
+    margin-right: 10px;
+}
+
+
+
+.product5addtocart button
+{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+
+.product5price p
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product5back
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #99ccff; */
+    color: #111;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+
+.product5back button
+{
+    background-color: #6693b5;  
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s; 
+}
+
+
+.product5back button:hover
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #bf6ab8; 
+}
+
+
+
+
+.product6container
+{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+
+
+.product6
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    /* background-color: yellow; */
+}
+
+.product6:hover
+{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+.product6front
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #ff66b2; */
+    color: #111;
+}
+
+
+
+
+.product6image
+{
+    position: absolute;
+    left: 15%;
+    height: 200px;
+    width: 250px;
+    /* border: 2px solid red; */
+    background-image: url("product6.png");
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.product6frontbutton
+{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+}
+
+
+
+.product6frontbutton button
+{
+    padding: 2px 10px;
+    width: 200px;
+    background-color: rgb(194, 220, 228);
+}
+
+
+
+
+.product6frontfooter
+{
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.product6addtocart
+{
+    margin-right: 10px;
+}
+
+
+
+.product6addtocart button
+{
+    font-size: 20px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+
+.product6price p
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.product6back
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    /* background-color: #99ccff; */
+    color: #111;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+
+
+
+.product6back button
+{
+    background-color: #6693b5; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition-duration: 0.4s; 
+}
+
+
+.product6back button:hover
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #bf6ab8; 
+}
+
+
+
+.section8
+{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: rgb(240, 240, 240);
+}
+
+.page8heading
+{
+    position: absolute;
+    font-size: 40px;
+    left: 20px;
+    top: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+.section8 h4
+{
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+.wirelessearbuds
+{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid rgb(220, 218, 218); */
+    top: 15%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fff; */
+
+}
+
+
+.wirelessearbudsshopbyfeature
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: rgb(17, 17, 17);
+}
+
+
+.wirelessearbudsshopbyfeature h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.wirelessearbudsshopbyfeature a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+}
+
+.wirelessearbudsshopbyfeature li
+{
+    list-style-type: none;
+}
+
+
+
+
+
+
+.wirelessearbudsshopbyprice
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: rgb(17, 17, 17);
+}
+
+
+.wirelessearbudsshopbyprice h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.wirelessearbudsshopbyprice a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+}
+
+
+.wirelessearbudsshopbyprice li
+{
+    list-style-type: none;
+}
+
+
+
+
+.wirelessspeakers
+{
+    width: 300px;
+    height: 400px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.wirelessspeakersshopbyfeature
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: rgb(17, 17, 17);
+}
+
+
+.wirelessspeakersshopbyfeature h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.wirelessspeakersshopbyfeature a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+.wirelessspeakersshopbyfeature li
+{
+    list-style-type: none;
+}
+
+
+
+
+
+
+.wirelessspeakersshopbyprice
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    color: rgb(17, 17, 17);
+}
+
+
+.wirelessspeakersshopbyprice h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.wirelessspeakersshopbyprice a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+
+.wirelessspeakersshopbyprice li
+{
+    list-style-type: none;
+}
+
+
+
+.wirelessearphones
+{
+    height: 400px;
+    width: 250px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+
+
+
+
+
+.wirelessearphonesshopbyfeature
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: rgb(17, 17, 17);
+}
+
+
+.wirelessearphonesshopbyfeature h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.wirelessearphonesshopbyfeature a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+.wirelessearphonesshopbyfeature li
+{
+    list-style-type: none;
+}
+
+
+
+
+
+
+.wirelessearphonesshopbyprice
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: rgb(17, 17, 17);
+}
+
+
+.wirelessearphonesshopbyprice h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.wirelessearphonesshopbyprice a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+
+.wirelessearphonesshopbyprice li
+{
+    list-style-type: none;
+}
+
+
+
+.wiredearphone
+{
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 300px;
+}
+
+
+
+
+
+
+.wiredearphonesshopbyfeature
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: rgb(17, 17, 17);
+}
+
+
+.wiredearphonesshopbyfeature h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.wiredearphonesshopbyfeature a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+.wiredearphonesshopbyfeature li
+{
+    list-style-type: none;
+}
+
+
+
+
+
+
+.wiredearphonesshopbyprice
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    color: rgb(17, 17, 17);
+}
+
+
+.wiredearphonesshopbyprice h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.wiredearphonesshopbyprice a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+
+.wiredearphonesshopbyprice li
+{
+    list-style-type: none;
+}
+
+
+
+.headphones
+{
+    height: 400px;
+    width: 300px;
+    /* border: 2px solid red; */
+    top: 55%;
+    left: 3%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+.headphoneshopbyfeature
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: rgb(17, 17, 17);
+}
+
+
+.headphoneshopbyfeature h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.headphoneshopbyfeature a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+.headphoneshopbyfeature li
+{
+    list-style-type: none;
+}
+
+
+
+
+
+
+.headphoneshopbyprice
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: rgb(17, 17, 17);
+}
+
+
+.headphoneshopbyprice h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.headphoneshopbyprice a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+
+.headphoneshopbyprice li
+{
+    list-style-type: none;
+}
+
+
+.smartwatches
+{
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+
+
+
+
+
+
+.smartwatchesshopbyfeature
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: rgb(17, 17, 17);
+}
+
+
+.smartwatchesshopbyfeature h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.smartwatchesshopbyfeature a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+.smartwatchesshopbyfeature li
+{
+    list-style-type: none;
+}
+
+
+
+
+
+
+.smartwatchesshopbyprice
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    color: rgb(17, 17, 17);
+}
+
+
+.smartwatchesshopbyprice h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.smartwatchesshopbyprice a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+
+.smartwatchesshopbyprice li
+{
+    list-style-type: none;
+}
+
+
+
+.soundbars
+{
+    position: absolute;
+    /* border: 2px solid red; */
+    height: 300px;
+    width: 250px;
+    top: 60%;
+    left: 50%;
+}
+
+
+
+
+
+
+.soundbarsshopbyfeature
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    /* left: %; */
+    color: rgb(17, 17, 17);
+}
+
+
+.soundbarsshopbyfeature h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.soundbarsshopbyfeature a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+.soundbarsshopbyfeature li
+{
+    list-style-type: none;
+}
+
+
+
+
+
+
+.soundbarsshopbyprice
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 60%;
+    /* left: 5%; */
+    color: rgb(17, 17, 17);
+}
+
+
+.soundbarsshopbyprice h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.soundbarsshopbyprice a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+
+.soundbarsshopbyprice li
+{
+    list-style-type: none;
+}
+
+
+.powerbank
+{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    /* border: 2px solid red; */
+    top: 60%;
+    left: 75%;
+
+}
+
+
+
+
+
+
+
+
+
+.powerbackshopbyfeature
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: rgb(17, 17, 17);
+}
+
+
+.powerbackshopbyfeature h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.powerbackshopbyfeature a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+.powerbackshopbyfeature li
+{
+    list-style-type: none;
+}
+
+
+
+
+
+
+.powerbankshopbyprice
+{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    color: rgb(17, 17, 17);
+}
+
+
+.powerbankshopbyprice h5
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.powerbankshopbyprice a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    line-height: 25px;
+}
+
+
+.powerbankshopbyprice li
+{
+    list-style-type: none;
+}
+
+
+.section9
+{
+    height: 300px;
+    width: 100vw;
+    background-color: #b56695;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+
+}
+
+.lastinfo
+{
+    margin-top: 60px;
+}
+
+
+.lastinfo h1
+{
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    /* text-align: center;   */
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize  ;
+}
+
+.lastinfo p
+{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+
+}
+
+.lastinfo h2
+{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+.page9images
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+
+}
+
+.google,.insta,.twitter,.git
+{
+    height: 70px;
+    width: 70px;
+    margin-right: 40px;
+}
